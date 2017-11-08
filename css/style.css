@@ -1,0 +1,74 @@
+/*
+Colors:
+	Primary:
+		normal: #90a4ae
+		dark: #62757f
+		light: #c1d5e0
+	Secondary:
+		normal: #1565c0
+		dark: #003c8f
+		light: #5e92f3
+*/
+
+body {
+	background-color: #c1d5e0; /* s-light */
+	font-family: sans-serif;
+	width: 85%;
+	margin: auto;
+}
+
+#pageHeader {
+	background-color: #90a4ae; /* p-normal */
+	position: relative;
+	z-index: 1;
+	box-shadow: 0 2px 1px #62757f; /* p-dark */
+	padding: 1em 0;
+}
+
+#pageHeader>h1 {
+	text-align: center;
+	margin: 0 auto;
+}
+
+#pageNav {
+	background-color: #1565c0; /* s-normal */
+	color: white;
+	position: relative;
+	z-index: 0;
+	box-shadow: 0 3px 1px #003c8f; /* s-dark */
+	padding: 1ex 0;
+	margin: auto;
+}
+
+#pageNav>ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	padding: 0;
+	margin: 0;
+}
+
+#pageNav>ul>li>a {
+	text-decoration-line: none;
+	padding: 1ex 3.5ex;
+}
+
+#pageNav>ul>li>a:link {
+	transition: background-color 0.35s;
+	color: white;
+}
+
+#pageNav>ul>li>a:visited {
+	transition: background-color 0.35s;
+	color: white;
+}
+
+#pageNav>ul>li>a:hover {
+	background-color: #003c8f;
+	transition: background-color 0.25s;
+}
+
+#pageNav>ul>li>a:active {
+	background-color: #5e92f3;
+	transition: background-color 0s;
+}
