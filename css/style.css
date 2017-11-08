@@ -13,8 +13,12 @@ Colors:
 body {
 	background-color: #c1d5e0; /* s-light */
 	font-family: sans-serif;
-	width: 85%;
+	width: 95%;
 	margin: auto;
+}
+
+.navSelected {
+	border-bottom: 0.5ex solid #5e92f3;
 }
 
 #pageHeader {
