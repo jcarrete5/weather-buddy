@@ -26,10 +26,12 @@ a {
 
 .wgBadge {
 	position: relative;
-	left: 0.5ex;
-	width: 16px;
-	height: 16px;
-	float: right;
+	left: 0.25ex;
+	top: 0.25em;
+	max-height: 1.5em;
+	width: auto;
+	height: auto;
+	/*float: right;*/
 	border-radius: 4px;
 }
 
@@ -94,4 +96,8 @@ a {
 	font-size: smaller;
 	padding: 1ex 0;
 	margin-top: 2em;
+}
+
+#mainContent {
+
 }
