@@ -98,5 +98,6 @@ a {
 }
 
 #mainContent {
-
+	width: 85%;
+	margin: 1em auto;
 }
