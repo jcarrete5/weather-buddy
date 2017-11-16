@@ -11,7 +11,7 @@ Colors:
 */
 
 body {
-	background-color: #c1d5e0; /* s-light */
+	background-color: #c1d5e0; /* p-light */
 	font-family: sans-serif;
 	margin: auto;
 }
@@ -21,7 +21,7 @@ a {
 }
 
 .navSelected {
-	border-bottom: 0.5ex solid #5e92f3;
+	border-bottom: 0.5ex solid #5e92f3; /* s-light */
 }
 
 .wgBadge {
@@ -79,12 +79,12 @@ a {
 }
 
 #pageNav>ul>li>a:hover {
-	background-color: #003c8f;
+	background-color: #003c8f; /* s-dark */
 	transition: background-color 0.25s;
 }
 
 #pageNav>ul>li>a:active {
-	background-color: #5e92f3;
+	background-color: #5e92f3; /* s-light */
 	transition: background-color 0s;
 }
 
