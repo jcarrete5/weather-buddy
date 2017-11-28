@@ -28,3 +28,12 @@ function getLocation(callback) {
 		});
 	});
 }
+
+// Add event handler for location search box to autocomplete search
+// as the user types
+$(document).ready(function() {
+	$("#locationSearch").on("input", function(e) {
+		var search = e.currentTarget.value;
+		autocomplete(search);
+	});
+});
