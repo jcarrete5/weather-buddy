@@ -1,10 +1,11 @@
 // query format: http://api.wunderground.com/api/[api-key]/[data-type]/q/[state-abbr]/[city].json
 // autocomplete api: http://autocomplete.wunderground.com/aq?query=[query]
 var apiUrl = "http://api.wunderground.com/api/"+apikey;
+var autocompleteEntries = [];
 
 function parseAutocompleteResults(data) {
 	console.log("Parsing autocomplete results");
-	console.log(data);
+	autocompleteEntries = data.RESULTS;
 }
 
 function autocomplete(searchText) {
