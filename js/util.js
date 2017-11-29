@@ -6,6 +6,7 @@ var autocompleteEntries = [];
 function parseAutocompleteResults(data) {
 	console.log("Parsing autocomplete results");
 	autocompleteEntries = data.RESULTS;
+	$("#wuQuery").val(autocompleteEntries[0].l);
 }
 
 function autocomplete(searchText) {
@@ -30,9 +31,9 @@ function getLocation(callback) {
 	});
 }
 
-// Add event handler for location search box to autocomplete search
-// as the user types
 $(document).ready(function() {
+	// Add event handler for location search box to autocomplete search
+	// as the user types
 	$("#locationSearch").on("input", function(e) {
 		var search = e.currentTarget.value;
 		autocomplete(search);
