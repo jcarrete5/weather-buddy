@@ -34,6 +34,10 @@ a {
 	border-radius: 4px;
 }
 
+.wrapper {
+	text-align: center;
+}
+
 #pageHeader {
 	background-color: #90a4ae; /* p-normal */
 	position: relative;
