@@ -6,11 +6,16 @@ var autocompleteEntries = [];
 function parseAutocompleteResults(data) {
 	console.log("Parsing autocomplete results");
 	autocompleteEntries = data.RESULTS;
-	$("#wuQuery").val(autocompleteEntries[0].l);
+	if (autocompleteEntries.length === 0) {
+		console.log("No autocomplete results");
+	} else {
+		$("#wuQuery").val(autocompleteEntries[0].l);
+	}
 }
 
 function autocomplete(searchText) {
-	var search = "http://autocomplete.wunderground.com/aq?cb=parseAutocompleteResults&query="+searchText;
+	var search = "http://autocomplete.wunderground.com/aq?cb=parseAutocompleteResults&query="+
+		encodeURIComponent(searchText);
 
 	// Using jsonp to retrieve and parse autocomplete results
 	var script = document.createElement("script");
