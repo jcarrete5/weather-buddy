@@ -38,6 +38,11 @@ a {
 	text-align: center;
 }
 
+#inner {
+	width: 300px;
+	margin: auto;
+}
+
 #pageHeader {
 	background-color: #90a4ae; /* p-normal */
 	position: relative;
