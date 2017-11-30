@@ -20,11 +20,16 @@ $(document).ready(function() {
 			.append($("<li></li>")
 				.html("Wind Chill: "+weatherData.windchill_string))
 			.append($("<li></li>")
-				.html(weatherData.observation_time));
+				.html(weatherData.observation_time)
+				.css("font-style", "italic"));
 
 		// Give inner div appearence of being raised
 		$("#inner").css("box-shadow", "1px 1px 5px #62757f");
 	}
+
+	$("#weatherIcon")
+		.attr("src", "img/loading.gif")
+		.attr("alt", "Loading weather data");
 
 	var urlParams = new URLSearchParams(window.location.search);
 	if (urlParams.has("wuQuery") && urlParams.get("wuQuery") !== "") {

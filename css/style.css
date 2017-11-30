@@ -40,7 +40,17 @@ a {
 
 #inner {
 	width: 300px;
+	padding: 1em;
 	margin: auto;
+}
+
+#weatherConditions {
+	list-style-type: none;
+	padding: 0;
+}
+
+#weatherConditions>li {
+	margin: 1ex auto;
 }
 
 #pageHeader {
