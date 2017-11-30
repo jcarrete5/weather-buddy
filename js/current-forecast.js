@@ -21,7 +21,8 @@ $(document).ready(function() {
 				.html("Wind Chill: "+weatherData.windchill_string))
 			.append($("<li></li>")
 				.html(weatherData.observation_time)
-				.css("font-style", "italic"));
+				.css("font-style", "italic")
+				.css("font-size", "smaller"));
 
 		// Give inner div appearence of being raised
 		$("#inner").css("box-shadow", "1px 1px 5px #62757f");
