@@ -40,8 +40,9 @@ footer>div {
 	border-radius: 4px;
 }
 
-.wrapper {
-	text-align: center;
+#locationSearchForm {
+	width: 80%;
+	margin: 2em auto;
 }
 
 #inner {
@@ -124,5 +125,6 @@ footer>div {
 
 #mainContent {
 	width: 85%;
+	text-align: center;
 	margin: 1em auto;
 }

@@ -22,19 +22,17 @@
 				<li><a href="alerts.html">Severe Weather Alerts</a></li>
 			</ul>
 		</nav>
+		<form id="locationSearchForm" action="index.html">
+			<input id="wuQuery" type="hidden" name="wuQuery">
+			<input id="locationSearch" type="search" autocomplete="on" placeholder="Enter Location">
+			<input id="locationSubmit" type="submit">
+		</form>
 		<main id="mainContent">
-			<form id="locationSearchForm" action="index.html">
-				<input id="wuQuery" type="hidden" name="wuQuery">
-				<input id="locationSearch" type="search" autocomplete="on" placeholder="Enter Location">
-				<input id="locationSubmit" type="submit">
-			</form>
-			<div class="wrapper">
-				<h2>Current Weather Conditions</h2>
-				<div id="inner">
-					<h3 id="weatherLocation"></h3>
-					<img id="weatherIcon">
-					<ul id="weatherConditions"></ul>
-				</div>
+			<h2>Current Weather Conditions</h2>
+			<div id="inner">
+				<h3 id="weatherLocation"></h3>
+				<img id="weatherIcon">
+				<ul id="weatherConditions"></ul>
 			</div>
 		</main>
 		<footer id="pageFooter">
