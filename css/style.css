@@ -20,6 +20,12 @@ a {
 	text-decoration-line: none;
 }
 
+footer>div {
+	text-align: center;
+	vertical-align: middle;
+	line-height: 30px;
+}
+
 .navSelected {
 	border-bottom: 0.5ex solid #5e92f3; /* s-light */
 }
