@@ -25,6 +25,7 @@ function autocomplete(searchText) {
 
 // Gets the location and passes location information to callback once received
 function getLocation(callback) {
+	console.log("Finding location");
 	navigator.geolocation.getCurrentPosition(function(pos) {
     	var lat = pos.coords.latitude;
 		var long = pos.coords.longitude;
