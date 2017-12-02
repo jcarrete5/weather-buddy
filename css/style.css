@@ -40,6 +40,15 @@ footer>div {
 	border-radius: 4px;
 }
 
+.inlineContainer {
+	display: flex;
+	justify-content: space-around;
+}
+
+.inlineContainer>div {
+	width: 150px;
+}
+
 #locationSearchForm {
 	width: 80%;
 	margin: 2em auto;
