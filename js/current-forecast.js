@@ -1,5 +1,7 @@
 $(document).ready(function() {
-	function updatePage(weatherData) {
+	function updatePage(data) {
+		var weatherData = data.current_observation;
+
 		// Update webpage to show relevant weather information
 		$("#weatherLocation")
 			.html(weatherData.display_location.full);

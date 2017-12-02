@@ -43,14 +43,14 @@ function queryWeatherInformation(infoType, callback) {
 		$.get(apiUrl+"/"+infoType+urlParams.get("wuQuery")+".json", null, function(data, textStatus, jqXHR) {
 			console.log("weather information status: "+textStatus);
 			console.log(data);
-			callback(data.current_observation);
+			callback(data);
 		});
 	} else {
 		getLocation(function(loc) {
 			$.get(apiUrl+"/"+infoType+loc.location.l+".json", null, function(data, textStatus, jqXHR) {
 				console.log("weather information status: "+textStatus);
 				console.log(data);
-				callback(data.current_observation);
+				callback(data);
 			});
 		});
 	}
