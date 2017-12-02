@@ -37,6 +37,25 @@ function getLocation(callback) {
 	});
 }
 
+function queryWeatherInformation(infoType, callback) {
+	var urlParams = new URLSearchParams(window.location.search);
+	if (urlParams.has("wuQuery") && urlParams.get("wuQuery") !== "") {
+		$.get(apiUrl+"/"+infoType+urlParams.get("wuQuery")+".json", null, function(data, textStatus, jqXHR) {
+			console.log("weather information status: "+textStatus);
+			console.log(data);
+			callback(data.current_observation);
+		});
+	} else {
+		getLocation(function(loc) {
+			$.get(apiUrl+"/"+infoType+loc.location.l+".json", null, function(data, textStatus, jqXHR) {
+				console.log("weather information status: "+textStatus);
+				console.log(data);
+				callback(data.current_observation);
+			});
+		});
+	}
+}
+
 $(document).ready(function() {
 	// Add event handler for location search box to autocomplete search
 	// as the user types
