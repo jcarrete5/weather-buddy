@@ -19,8 +19,8 @@ function autocomplete(searchText) {
 
 	// Using jsonp to retrieve and parse autocomplete results
 	var script = document.createElement("script");
-    script.src = search;
-    document.getElementsByTagName("head")[0].appendChild(script);
+	script.src = search;
+	document.getElementsByTagName("head")[0].appendChild(script);
 }
 
 // Gets the location and passes location information to callback once received
