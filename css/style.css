@@ -47,6 +47,8 @@ footer>div {
 
 .inlineContainer>div {
 	width: 150px;
+	/*background-color: #5e92f3;*/
+	box-shadow: 1px 1px 5px #62757f;
 }
 
 #locationSearchForm {
