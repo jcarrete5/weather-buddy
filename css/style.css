@@ -51,6 +51,10 @@ footer>div {
 	box-shadow: 1px 1px 5px #62757f;
 }
 
+#alertList {
+	list-style-type: none;
+}
+
 #locationSearchForm {
 	width: 80%;
 	margin: 2em auto;

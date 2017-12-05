@@ -3,9 +3,15 @@ $(document).ready(function() {
 		$("#loadingGif").attr("hidden", "true");
 
 		var alerts = weatherData.alerts;
+		if (alerts.length === 0) {
+			$("#alertList")
+				.append($("<li></li>")
+					.html("No severe weather alerts"));
+			return;
+		}
+
 		for (let alert of alerts) {
 			$("#alertList")
-				.css("list-style-type", "none")
 				.append($("<li></li>")
 					.append($("<h3></h3>")
 						.html(alert.description))
