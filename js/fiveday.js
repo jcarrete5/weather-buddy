@@ -4,6 +4,8 @@ $(document).ready(function() {
 	}
 
 	function updatePage(weatherData) {
+		$("#loadingGif").attr("hidden", "true");
+
 		var daily = weatherData.forecast.simpleforecast.forecastday;
 		$("#mainContent>div.inlineContainer>div").each(function(i, elm) {
 			$(elm)
@@ -24,6 +26,8 @@ $(document).ready(function() {
 						.html("Avg Humidity: "+daily[i].avehumidity)));
 		});
 	}
+
+	$("#loadingGif").attr("src", "img/loading.gif");
 
 	queryWeatherInformation("forecast10day", updatePage);
 });
