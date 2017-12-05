@@ -23,7 +23,7 @@ $(document).ready(function() {
 					.append($("<li></li>")
 						.html("Low: "+formatTemp(daily[i].low)))
 					.append($("<li></li>")
-						.html("Avg Humidity: "+daily[i].avehumidity)));
+						.html("Avg Humidity: "+daily[i].avehumidity+"%")));
 		});
 	}
 
